@@ -6,6 +6,8 @@ import {
   StoryblokComponent,
 } from '@storyblok/react';
 import Layout from '../components/layout';
+import { Headline } from '@repo/ui/headline';
+import { CMSHeadline } from '../components/CMSHeadline/CMSHeadline';
 
 export default function Home({ story }) {
   story = useStoryblokState(story);
