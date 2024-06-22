@@ -5,6 +5,7 @@ import {
   getStoryblokApi,
   StoryblokComponent,
 } from '@storyblok/react';
+import Layout from '../components/layout';
 
 export default function Page({ story }) {
   story = useStoryblokState(story);
@@ -16,11 +17,9 @@ export default function Page({ story }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <header>
-        <h1>{story ? story.name : 'My Site'}</h1>
-      </header>
-
-      <StoryblokComponent blok={story.content} />
+      <Layout>
+        <StoryblokComponent blok={story.content} />
+      </Layout>
     </div>
   );
 }

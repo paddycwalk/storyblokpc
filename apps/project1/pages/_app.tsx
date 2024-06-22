@@ -2,7 +2,7 @@ import { storyblokInit, apiPlugin } from '@storyblok/react';
 import Feature from '../components/Feature/Feature';
 import Grid from '../components/Grid/Grid';
 import Teaser from '../components/Teaser/Teaser';
-import Page from './[...slug]';
+import Page from '../components/Page/Page';
 
 const components = {
   feature: Feature,
@@ -21,7 +21,8 @@ storyblokInit({
 });
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  const { key, ...restProps } = pageProps;
+  return <Component key={key} {...restProps} />;
 }
 
 export default MyApp;

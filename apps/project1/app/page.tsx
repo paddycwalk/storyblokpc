@@ -1,7 +1,0 @@
-export default function Home() {
-  return (
-    <div>
-      <main>project1121231</main>
-    </div>
-  );
-}
