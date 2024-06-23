@@ -4,6 +4,7 @@ import Grid from '../components/Grid/Grid';
 import Teaser from '../components/Teaser/Teaser';
 import Page from '../components/Page/Page';
 import { CMSHeadline } from '../components/CMSHeadline/CMSHeadline';
+import { CMSImage } from '../components/CMSImage/CMSImage';
 
 const components = {
   feature: Feature,
@@ -11,6 +12,7 @@ const components = {
   teaser: Teaser,
   page: Page,
   headline: CMSHeadline,
+  image: CMSImage,
 };
 
 storyblokInit({

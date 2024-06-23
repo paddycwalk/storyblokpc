@@ -35,11 +35,13 @@ export const NextImage = ({
 }: ImageProps) => {
   return (
     <figure
-      className={clsx({
-        [`${className}`]: className,
-        [styles['Image']]: true,
-        [styles[`Image-${aspectRatio}`]]: aspectRatio,
-      })}
+      className={clsx(
+        className,
+        styles.Image, // Always apply styles.Image
+        {
+          [styles[`Image-${aspectRatio}`]]: aspectRatio,
+        }
+      )}
     >
       <Image
         alt={alt}
