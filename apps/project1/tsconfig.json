@@ -8,7 +8,10 @@
     ],
     "strictNullChecks": true,
     "skipLibCheck": true,
-    "noEmitOnError": false
+    "noEmitOnError": false,
+    "paths": {
+      "ui": ["../../packages/ui/src"]
+    }
     // just for cms build
   },
   "include": [

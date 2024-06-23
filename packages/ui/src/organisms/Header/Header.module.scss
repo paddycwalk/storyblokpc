@@ -1,0 +1,17 @@
+.Header {
+  display: flex;
+  list-style-type: none;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  justify-content: center;
+
+  li {
+    padding: 16px;
+    margin-bottom: 0 !important;
+
+    &:hover {
+      background-color: var(--color-dark-hover);
+      cursor: pointer;
+    }
+  }
+}

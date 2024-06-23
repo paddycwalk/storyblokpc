@@ -1,0 +1,7 @@
+.List {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}

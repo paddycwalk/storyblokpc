@@ -1,0 +1,34 @@
+.Card {
+  border: var(--card-border);
+  display: inline-flex;
+  flex-direction: column;
+  width: 410px;
+  padding: var(--card-padding);
+  gap: 12px;
+  box-shadow: var(--card-boxShadow);
+  background-color: var(--card-bgColor);
+
+  &:hover {
+    cursor: pointer;
+    border: var(--card-borderHover);
+  }
+
+  img {
+    margin-bottom: 12px;
+  }
+
+  .Headline {
+    margin: 20px 0;
+  }
+
+  button {
+    margin-top: 12px;
+  }
+
+  &_content {
+    padding: var(--card-contentPadding);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,25 @@
+.Footer {
+  color: var(--color-white);
+  background-color: #3c3c3b;
+
+  &_list {
+    list-style: none;
+    margin-bottom: 40px;
+  }
+
+  &_container {
+    padding: 60px;
+  }
+
+  &_listContainer {
+    display: flex;
+    gap: 100px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-white);
+  }
+
+  &_print {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
